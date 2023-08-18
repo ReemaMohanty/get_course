@@ -37,7 +37,7 @@ def print_keys(dict: Union[Dict, Any]):
 
 if __name__ == "__main__":
 
-    course = get_course(4)
+    course = get_course(2)
     attributes = course['data']['attributes']
     print(f"Attributes: {attributes.keys()}")
 

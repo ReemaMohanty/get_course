@@ -34,14 +34,15 @@ def print_keys(dict: Union[Dict, Any]):
 
 if __name__ == "__main__":
 
-    lecture = get_lecture(4)
+    lecture = get_lecture(2)
     attributes = lecture['data']['attributes']
 
     print(f"Attributes: {attributes.keys()}")
 
-    blocks = [x['attributes'] for x in attributes['Blocks']['data']]
+    blocks = attributes['Blocks']['data']
+    print(blocks)
     for block in blocks:
-        print(f"This lecture contains blocks: '{block['Title']}'")
+        print(f"This lecture contains block {block['id']}: '{block['attributes']['Title']}'")
 
     authors = [x['attributes'] for x in attributes['LectureCreators']['data']]
 
