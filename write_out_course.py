@@ -1,20 +1,3 @@
-"""Writes out a course to the folder structure required for SCORM packaging.
-
-Writes out a course to the folder structure required to make a SCORM package of the lectures.
-
-    lecture_01
-        assets/
-        lecture_1.1.md
-        lecture_1.2.md
-        lecture_1.3.md
-        lecture_1.4.md
-
-Calls the SCORM packaging script to create a SCORM package for each lecture.
-
-Also writes out all copy for easy (manual) upload to Moodle (note that ideally we could package all this material
-so that OU could automate the upload to Moodle).
-
-"""
 
 from os.path import exists
 from os import mkdir
